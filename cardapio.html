@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cardápio — Dom Samuca</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Cinzel:wght@400;500;600;700&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="cardapio.css"/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a class="nav-logo" href="index.html">Dom <span>Samuca</span></a>
+    <a class="nav-back" href="index.html">
+      <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Voltar ao site
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="menu-hero">
+    <div class="menu-hero-bg"></div>
+    <div class="menu-hero-inner">
+      <p class="hero-eyebrow">Dom Samuca Restaurante</p>
+      <h1>
+        <span class="line1">Nosso</span>
+        <span class="line2">Cardápio</span>
+      </h1>
+      <p class="hero-tagline">Sabores que atravessam gerações, preparados com dedicação e amor</p>
+      <div class="hero-rule">
+        <div class="hero-rule-line"></div>
+        <span class="hero-rule-diamond">◆ ◆ ◆</span>
+        <div class="hero-rule-line" style="background:linear-gradient(90deg,transparent,var(--gold-dim));transform:scaleX(-1);"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- STICKY CATEGORY NAV -->
+  <div class="category-nav" id="catNav">
+    <div class="category-nav-inner">
+      <button class="cat-btn active" data-section="entradas"><span class="cat-icon">🥗</span>Entradas</button>
+      <button class="cat-btn" data-section="principais"><span class="cat-icon">🥩</span>Pratos Principais</button>
+      <button class="cat-btn" data-section="frutos"><span class="cat-icon">🦞</span>Frutos do Mar</button>
+      <button class="cat-btn" data-section="massas"><span class="cat-icon">🍝</span>Massas</button>
+      <button class="cat-btn" data-section="degustacao"><span class="cat-icon">⭐</span>Menu Degustação</button>
+      <button class="cat-btn" data-section="sobremesas"><span class="cat-icon">🍮</span>Sobremesas</button>
+      <button class="cat-btn" data-section="bebidas"><span class="cat-icon">🍷</span>Bebidas</button>
+    </div>
+  </div>
+
+  <!-- MAIN BODY -->
+  <main class="menu-body">
+
+    <!-- ENTRADAS -->
+    <section class="menu-section active" id="sec-entradas">
+      <div class="section-head rv">
+        <div class="section-head-left">
+          <div class="section-cat-label">Para Começar Bem</div>
+          <h2 class="section-title">En<em>tradas</em></h2>
+          <p class="section-desc">Cada entrada é um convite ao que está por vir — pequenos prazeres que abrem o apetite.</p>
+        </div>
+        <div class="section-count">01</div>
+      </div>
+      <div class="featured-grid rv rv1">
+        <div class="featured-card">
+          <div class="featured-card-img" style="background-image:url('https://images.unsplash.com/photo-1541014741259-de529411b96a?w=900&q=80')"></div>
+          <div class="featured-card-overlay"></div>
+          <div class="featured-card-body">
+            <span class="featured-badge">⭐ Assinatura da Casa</span>
+            <div class="featured-name">Croquete de Costela<br/>com Chimichurri Artesanal</div>
+            <div class="featured-desc">Crocantes por fora, cremosos por dentro. Costela bovina desfiada lentamente por 6 horas, envolta em crosta de pão japonês e servida com chimichurri de ervas frescas do nosso jardim.</div>
+            <div class="featured-footer"><div class="featured-price">R$ 42</div><div class="featured-tags"><span class="tag hot">Popular</span></div></div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-card-img" style="background-image:url('https://images.unsplash.com/photo-1580822184713-fc5400e7fe10?w=900&q=80')"></div>
+          <div class="featured-card-overlay"></div>
+          <div class="featured-card-body">
+            <span class="featured-badge">✦ Chef Recomenda</span>
+            <div class="featured-name">Carpaccio de Filé Mignon<br/>com Parmesão Trufado</div>
+            <div class="featured-desc">Finíssimas lâminas de filé mignon argentino com lascas de Grana Padano, rúcula selvagem, alcaparras e óleo de trufa negra do Périgord.</div>
+            <div class="featured-footer"><div class="featured-price">R$ 64</div><div class="featured-tags"><span class="tag">Premium</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="items-grid rv rv2" style="margin-top:2px;">
+        <div class="item-card"><div class="item-top"><div class="item-name">Bruschetta de Tomate Seco e Brie</div><div class="item-price">R$ 34</div></div><div class="item-desc">Ciabatta grelhada com tomate seco em conserva própria, queijo brie fundido e manjericão fresco.</div><div class="item-meta"><span class="tag veg">Vegetariano</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Bolinho de Bacalhau Português</div><div class="item-price">R$ 48</div></div><div class="item-desc">Bacalhau do Porto dessalgado por 48h, batata asterix e salsinha. Acompanha aioli de alho confitado e azeitonas arbequinas.</div><div class="item-meta"><span class="item-origin">Tradição Portuguesa</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Tartare de Atum Fresco</div><div class="item-price">R$ 66</div></div><div class="item-desc">Atum rabilho picado na faca com gengibre, cebolinha, gergelim negro e molho ponzu cítrico. Com chips de tapioca e wasabi artesanal.</div><div class="item-meta"><span class="tag new">Novo</span><span class="item-dot"></span><span class="item-origin">Fusão Nipo-Brasileira</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Sopa de Cebola Gratinada</div><div class="item-price">R$ 38</div></div><div class="item-desc">Cebolas caramelizadas por 2 horas em manteiga normanda, caldo artesanal, vinho branco, croutons rústicos e gruyère suíço gratinado.</div><div class="item-meta"><span class="item-origin">Inspiração Francesa</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Burrata com Tomate Heirloom</div><div class="item-price">R$ 54</div></div><div class="item-desc">Burrata importada da Puglia com tomates heirloom coloridos, pesto de manjericão genovês, flor de sal e azeite siciliano. Acompanha focaccia quente.</div><div class="item-meta"><span class="tag veg">Vegetariano</span><span class="tag">Premium</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Ceviche de Peixe Branco</div><div class="item-price">R$ 52</div></div><div class="item-desc">Robalo fresco curado no leche de tigre com lima, coentro, cebola roxa, pimenta dedo-de-moça e batata-doce cozida.</div><div class="item-meta"><span class="item-origin">Fusão Peruana</span></div></div>
+      </div>
+    </section>
+
+    <!-- PRATOS PRINCIPAIS -->
+    <section class="menu-section" id="sec-principais">
+      <div class="section-head rv">
+        <div class="section-head-left">
+          <div class="section-cat-label">O Coração do Cardápio</div>
+          <h2 class="section-title">Pratos <em>Principais</em></h2>
+          <p class="section-desc">Da brasa ao forno lento, cada prato é uma declaração de amor à gastronomia brasileira.</p>
+        </div>
+        <div class="section-count">02</div>
+      </div>
+      <div class="featured-grid rv rv1">
+        <div class="featured-card">
+          <div class="featured-card-img" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?w=900&q=80')"></div>
+          <div class="featured-card-overlay"></div>
+          <div class="featured-card-body">
+            <span class="featured-badge">👑 Estrela da Casa</span>
+            <div class="featured-name">Costela Bovina Assada<br/>8 Horas no Forno</div>
+            <div class="featured-desc">A costela entra ao forno às 6h. Temperada com sal grosso, alho e ervas silvestres. Desfiada na mesa. Acompanha purê de mandioca com manteiga e salada de agrião com amêndoas.</div>
+            <div class="featured-footer"><div class="featured-price">R$ 115</div><div class="featured-tags"><span class="tag hot">Esgota Rápido</span></div></div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-card-img" style="background-image:url('https://images.unsplash.com/photo-1558030006-450675393462?w=900&q=80')"></div>
+          <div class="featured-card-overlay"></div>
+          <div class="featured-card-body">
+            <span class="featured-badge">🔥 Grelha da Casa</span>
+            <div class="featured-name">Picanha Angus na Brasa<br/>com Farofa Especial</div>
+            <div class="featured-desc">Picanha de raça angus certificada, grelhada na brasa de carvão de coco. Acompanha farofa de bacon artesanal, vinagrete de ervas frescas e arroz com brócolis gratinado.</div>
+            <div class="featured-footer"><div class="featured-price">R$ 98</div><div class="featured-tags"><span class="tag">Assinatura</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="items-grid rv rv2" style="margin-top:2px;">
+        <div class="item-card"><div class="item-top"><div class="item-name">Medalhão de Filé Mignon ao Funghi</div><div class="item-price">R$ 128</div></div><div class="item-desc">Dois medalhões ao ponto com molho de vinho Malbec e funghi porcini importado, batatas rústicas ao alecrim e aspargos grelhados no azeite.</div><div class="item-meta"><span class="tag">Premium</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Frango Caipira ao Molho Pardo</div><div class="item-price">R$ 78</div></div><div class="item-desc">Frango caipira criado solto, ao molho escuro tradicional mineiro, acompanha polenta cremosa com queijo canastra e couve mineira refogada.</div><div class="item-meta"><span class="item-origin">Cozinha Mineira</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Moqueca de Peixe na Panela de Barro</div><div class="item-price">R$ 92</div></div><div class="item-desc">Namorado fresco em leite de coco baiano, azeite de dendê, tomates, pimentões e coentro. Servido na panela de barro com pirão cremoso e arroz de alho.</div><div class="item-meta"><span class="item-origin">Culinária Baiana</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Rabada ao Molho Encorpado</div><div class="item-price">R$ 86</div></div><div class="item-desc">Rabo bovino cozido por 4 horas em molho de especiarias com vinho tinto e legumes. Acompanha polenta frita crocante e agrião fresco.</div><div class="item-meta"><span class="item-origin">Cozinha Carioca</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Cordeiro ao Forno com Alho Confitado</div><div class="item-price">R$ 138</div></div><div class="item-desc">Pernil de cordeiro com ervas provençais, alho confitado e mostarda antiga. Acompanha ratatouille provençal e batatas fondant ao tomilho.</div><div class="item-meta"><span class="tag">Premium</span><span class="item-dot"></span><span class="item-origin">Inspiração Mediterrânea</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Pato à Laranja Clássico</div><div class="item-price">R$ 108</div></div><div class="item-desc">Magret de pato com molho de laranja e grand marnier, acompanha purê de batata baroa e feijão branco com pancetta.</div><div class="item-meta"><span class="item-origin">Grande Clássico Francês</span></div></div>
+      </div>
+    </section>
+
+    <!-- FRUTOS DO MAR -->
+    <section class="menu-section" id="sec-frutos">
+      <div class="section-head rv">
+        <div class="section-head-left">
+          <div class="section-cat-label">Do Mar à Mesa</div>
+          <h2 class="section-title">Frutos <em>do Mar</em></h2>
+          <p class="section-desc">Chegam frescos todas as manhãs do mercado central. Preparados com respeito ao produto e ao oceano.</p>
+        </div>
+        <div class="section-count">03</div>
+      </div>
+      <div class="featured-grid rv rv1">
+        <div class="featured-card">
+          <div class="featured-card-img" style="background-image:url('https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=900&q=80')"></div>
+          <div class="featured-card-overlay"></div>
+          <div class="featured-card-body">
+            <span class="featured-badge">🦞 Especialidade</span>
+            <div class="featured-name">Lagosta Inteira Grelhada<br/>ao Azeite e Limão Siciliano</div>
+            <div class="featured-desc">Lagosta de 600g grelhada com manteiga de ervas da Provence, limão siciliano e flor de sal. Acompanha batatas douradas e salada verde.</div>
+            <div class="featured-footer"><div class="featured-price">R$ 195</div><div class="featured-tags"><span class="tag">Premium</span><span class="tag hot">Sazonal</span></div></div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-card-img" style="background-image:url('https://images.unsplash.com/photo-1559742811-822873691df8?w=900&q=80')"></div>
+          <div class="featured-card-overlay"></div>
+          <div class="featured-card-body">
+            <span class="featured-badge">⭐ Favorito</span>
+            <div class="featured-name">Polvo à Lagareiro<br/>com Batatas Coradas</div>
+            <div class="featured-desc">Polvo do Atlântico cozido em água do mar e louro, grelhado no azeite português com batatas coradas e alho assado inteiro.</div>
+            <div class="featured-footer"><div class="featured-price">R$ 138</div><div class="featured-tags"><span class="tag">Tradicional</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="items-grid rv rv2" style="margin-top:2px;">
+        <div class="item-card"><div class="item-top"><div class="item-name">Camarão Jumbo ao Alho e Óleo</div><div class="item-price">R$ 108</div></div><div class="item-desc">Camarões VG do Nordeste no azeite com alho fatiado, pimenta calabresa e tomates cereja. Acompanha tagliolini fresco e arroz negro.</div><div class="item-meta"><span class="tag hot">Popular</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Salmão Norueguês com Crosta de Ervas</div><div class="item-price">R$ 96</div></div><div class="item-desc">Filé de salmão com crosta de ervas finas e mostarda Dijon, purê de batata-doce e molho de maracujá com pimenta rosa.</div><div class="item-meta"><span class="item-origin">Noruega</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Bacalhau à Brás Moderno</div><div class="item-price">R$ 112</div></div><div class="item-desc">Bacalhau desfiado com ovos orgânicos mexidos, batata palha artesanal, azeitonas kalamata e salsinha. Versão contemporânea do clássico português.</div><div class="item-meta"><span class="item-origin">Grande Clássico Português</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Vieiras Grelhadas na Manteiga Negra</div><div class="item-price">R$ 128</div></div><div class="item-desc">Vieiras frescas seladas na manteiga negra sobre purê de couve-flor com trufas, chips de alcachofra e caviar de limão.</div><div class="item-meta"><span class="tag">Premium</span><span class="tag new">Novo</span></div></div>
+      </div>
+    </section>
+
+    <!-- MASSAS -->
+    <section class="menu-section" id="sec-massas">
+      <div class="section-head rv">
+        <div class="section-head-left">
+          <div class="section-cat-label">Feitas à Mão Diariamente</div>
+          <h2 class="section-title">Massas <em>Frescas</em></h2>
+          <p class="section-desc">Preparadas diariamente com semolina italiana e ovos caipiras da nossa cozinha.</p>
+        </div>
+        <div class="section-count">04</div>
+      </div>
+      <div class="line-menu rv rv1">
+        <div class="line-item"><div class="line-left"><div class="line-name">Tagliatelle ao Ragù de Ossobuco</div><div class="line-desc">Fita fresca ao ragù lento de ossobuco vitela, vinho branco, gremolata e parmesão Reggiano ralado na hora.</div><div class="item-meta" style="margin-top:.5rem;"><span class="tag">Especial</span></div></div><div class="line-right"><div class="line-price">R$ 88</div><div class="line-sub">Para 1 pessoa</div></div></div>
+        <div class="line-item"><div class="line-left"><div class="line-name">Pappardelle com Funghi Porcini e Trufas</div><div class="line-desc">Massa larga fresca com funghi porcini importado, manteiga de ervas, creme fresco e raspas de trufa negra. Finalizada com parmesão.</div><div class="item-meta" style="margin-top:.5rem;"><span class="tag veg">Vegetariano</span><span class="tag">Premium</span></div></div><div class="line-right"><div class="line-price">R$ 94</div><div class="line-sub">Para 1 pessoa</div></div></div>
+        <div class="line-item"><div class="line-left"><div class="line-name">Fettuccine Carbonara Clássico</div><div class="line-desc">Receita romana original com guanciale importado, pecorino romano, pimenta preta e gema de ovos caipiras. Sem creme — a tradição proíbe.</div><div class="item-meta" style="margin-top:.5rem;"><span class="item-origin">Receita Romana Original</span></div></div><div class="line-right"><div class="line-price">R$ 72</div><div class="line-sub">Para 1 pessoa</div></div></div>
+        <div class="line-item"><div class="line-left"><div class="line-name">Ravioli de Ricota e Espinafre</div><div class="line-desc">Massa recheada com ricota fresca, espinafre com alho e noz moscada. Molho de manteiga e sálvia com pignoli torrados.</div><div class="item-meta" style="margin-top:.5rem;"><span class="tag veg">Vegetariano</span></div></div><div class="line-right"><div class="line-price">R$ 78</div><div class="line-sub">Para 1 pessoa</div></div></div>
+        <div class="line-item"><div class="line-left"><div class="line-name">Lasanha da Nonna</div><div class="line-desc">Camadas de massa fresca, ragù bolognesa cozido por 4 horas, béchamel cremoso e três queijos italianos gratinados. Porção generosa.</div><div class="item-meta" style="margin-top:.5rem;"><span class="item-origin">Receita da Família</span></div></div><div class="line-right"><div class="line-price">R$ 68</div><div class="line-sub">Para 1 pessoa</div></div></div>
+        <div class="line-item"><div class="line-left"><div class="line-name">Gnocchi de Batata ao Gorgonzola</div><div class="line-desc">Nhoque de batata baroa feito à mão em molho de gorgonzola DOP, creme fresco e nozes caramelizadas. Finalizado com mel de ervas.</div><div class="item-meta" style="margin-top:.5rem;"><span class="tag veg">Vegetariano</span><span class="tag hot">Popular</span></div></div><div class="line-right"><div class="line-price">R$ 74</div><div class="line-sub">Para 1 pessoa</div></div></div>
+      </div>
+    </section>
+
+    <!-- MENU DEGUSTAÇÃO -->
+    <section class="menu-section" id="sec-degustacao">
+      <div class="section-head rv">
+        <div class="section-head-left">
+          <div class="section-cat-label">Uma Jornada Gastronômica</div>
+          <h2 class="section-title">Menu <em>Degustação</em></h2>
+          <p class="section-desc">Seis momentos compostos pelo Chef para revelar o melhor da nossa cozinha.</p>
+        </div>
+        <div class="section-count">05</div>
+      </div>
+      <div class="tasting-wrap rv rv1">
+        <div class="tasting-steps">
+          <div class="tasting-step"><div class="step-num">01</div><div class="step-body"><div class="step-course">Amuse-Bouche</div><div class="step-name">Boas-Vindas da Cozinha</div><div class="step-desc">Uma pequena surpresa do Chef — um bocado de cada estação, apresentado em colher de porcelana ou pedra. Muda semanalmente.</div></div></div>
+          <div class="tasting-step"><div class="step-num">02</div><div class="step-body"><div class="step-course">Entrada Fria</div><div class="step-name">Tartare de Atum com Caviar Brasileiro</div><div class="step-desc">Atum rabilho fresco com caviar de esturjão produzido em Santa Catarina, creme azedo, pepino em gel e flores comestíveis.</div></div></div>
+          <div class="tasting-step"><div class="step-num">03</div><div class="step-body"><div class="step-course">Entrada Quente</div><div class="step-name">Vieira Selada com Velouté de Milho Verde</div><div class="step-desc">Vieira fresca selada em manteiga negra sobre velouté de milho verde criollo, espuma de parmesão e óleo de páprica fumada.</div></div></div>
+          <div class="tasting-step"><div class="step-num">04</div><div class="step-body"><div class="step-course">Intermediário</div><div class="step-name">Sorbet de Maracujá com Espumante</div><div class="step-desc">Sorbet artesanal de maracujá da Bahia para limpar o palato, servido com uma colher de espumante brut da Serra Gaúcha.</div></div></div>
+          <div class="tasting-step"><div class="step-num">05</div><div class="step-body"><div class="step-course">Prato Principal</div><div class="step-name">Filé Mignon com Creme de Mandioca e Caviar</div><div class="step-desc">Tournedos de filé mignon em crosta de ervas com molho perigourdine e caviar brasileiro, sobre creme de mandioca e legumes glaceados.</div></div></div>
+          <div class="tasting-step"><div class="step-num">06</div><div class="step-body"><div class="step-course">Sobremesa</div><div class="step-name">Chocolate Valrhona com Sorvete de Cupuaçu</div><div class="step-desc">Ganache de chocolate Valrhona 70% com sorvete de cupuaçu amazônico, praliné de castanha-do-pará e folha de ouro alimentar.</div></div></div>
+        </div>
+        <div class="tasting-sidebar">
+          <div class="tasting-sidebar-title">Valores do Menu</div>
+          <div class="tasting-price-row"><span class="tasting-price-label">Menu sem harmonização</span><span class="tasting-price-val">R$ 260</span></div>
+          <div class="tasting-price-row"><span class="tasting-price-label">Com harmonização de vinhos</span><span class="tasting-price-val">R$ 420</span></div>
+          <div class="tasting-price-row"><span class="tasting-price-label">Harmonização premium</span><span class="tasting-price-val">R$ 580</span></div>
+          <p class="tasting-note">Servido apenas para mesa completa, à noite, de quinta a sábado. Reserva obrigatória com 24h de antecedência. Duração média: 3 horas.</p>
+          <a href="index.html#reservas" class="btn-gold tasting-cta"><span>Reservar Mesa</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBREMESAS -->
+    <section class="menu-section" id="sec-sobremesas">
+      <div class="section-head rv">
+        <div class="section-head-left">
+          <div class="section-cat-label">O Final Perfeito</div>
+          <h2 class="section-title">Sobre<em>mesas</em></h2>
+          <p class="section-desc">Preparadas diariamente pela nossa confeiteira. O final ideal para uma refeição memorável.</p>
+        </div>
+        <div class="section-count">06</div>
+      </div>
+      <div class="featured-grid rv rv1">
+        <div class="featured-card">
+          <div class="featured-card-img" style="background-image:url('https://images.unsplash.com/photo-1551024506-0bccd828d307?w=900&q=80')"></div>
+          <div class="featured-card-overlay"></div>
+          <div class="featured-card-body">
+            <span class="featured-badge">💛 Clássico da Casa</span>
+            <div class="featured-name">Pudim de Leite<br/>Condensado da Vovó</div>
+            <div class="featured-desc">A receita original da família, passada há três gerações. Textura aveludada, calda de caramelo amargo e uma pitada de flor de sal.</div>
+            <div class="featured-footer"><div class="featured-price">R$ 28</div><div class="featured-tags"><span class="tag hot">O Mais Pedido</span></div></div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-card-img" style="background-image:url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=900&q=80')"></div>
+          <div class="featured-card-overlay"></div>
+          <div class="featured-card-body">
+            <span class="featured-badge">🍫 Chef Recomenda</span>
+            <div class="featured-name">Petit Gâteau de Chocolate<br/>Valrhona</div>
+            <div class="featured-desc">Chocolate Valrhona 70% com coração derretido, sorvete de baunilha de Madagascar e calda de frutas vermelhas frescas.</div>
+            <div class="featured-footer"><div class="featured-price">R$ 38</div><div class="featured-tags"><span class="tag">Premium</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="items-grid rv rv2" style="margin-top:2px;">
+        <div class="item-card"><div class="item-top"><div class="item-name">Romeu e Julieta da Serra</div><div class="item-price">R$ 26</div></div><div class="item-desc">Queijo minas artesanal curado 30 dias com goiabada cascão de Minas, mel de flores silvestres e nozes.</div><div class="item-meta"><span class="item-origin">Tradição Mineira</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Pavê de Brigadeiro Belga</div><div class="item-price">R$ 34</div></div><div class="item-desc">Biscoito champagne no café espresso, creme de brigadeiro com chocolate belga 54% e granulado artesanal com crocante de castanha.</div><div class="item-meta"><span class="tag new">Novo</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Crème Brûlée de Maracujá</div><div class="item-price">R$ 32</div></div><div class="item-desc">Creme de baunilha de Madagascar com polpa de maracujá, caramelizado com maçarico. Tuile de amêndoa e chantilly levemente adoçado.</div><div class="item-meta"><span class="tag veg">Vegetariano</span></div></div>
+        <div class="item-card"><div class="item-top"><div class="item-name">Torta de Limão Siciliano</div><div class="item-price">R$ 30</div></div><div class="item-desc">Creme azedo de limão siciliano sobre massa sablée de amêndoas, merengue italiano tostado e gelo de limão com raspas confitadas.</div><div class="item-meta"><span class="tag veg">Vegetariano</span><span class="tag hot">Popular</span></div></div>
+      </div>
+    </section>
+
+    <!-- BEBIDAS -->
+    <section class="menu-section" id="sec-bebidas">
+      <div class="section-head rv">
+        <div class="section-head-left">
+          <div class="section-cat-label">Carta de Bebidas</div>
+          <h2 class="section-title">Be<em>bidas</em></h2>
+          <p class="section-desc">Curada pelo nosso sommelier para completar cada experiência à mesa.</p>
+        </div>
+        <div class="section-count">07</div>
+      </div>
+      <div class="drinks-cols rv rv1">
+        <div>
+          <div class="drinks-col-title">🍷 Vinhos Tintos</div>
+          <div class="line-menu">
+            <div class="line-item"><div class="line-left"><div class="line-name">Dom Samuca Reserva — Malbec</div><div class="line-desc">Seleção exclusiva. Notas de ameixa, cedro e chocolate. Corpo pleno.</div></div><div class="line-right"><div class="line-price">R$ 42/taça</div><div class="line-sub">R$ 168 garrafa</div></div></div>
+            <div class="line-item"><div class="line-left"><div class="line-name">Miolo Lote 43 — Cabernet Franc</div><div class="line-desc">Serra Gaúcha. Taninos sedosos, acidez equilibrada e longa persistência.</div></div><div class="line-right"><div class="line-price">R$ 38/taça</div><div class="line-sub">R$ 148 garrafa</div></div></div>
+            <div class="line-item"><div class="line-left"><div class="line-name">Don Melchor — Cabernet Sauvignon</div><div class="line-desc">Chile, Puente Alto. Referência sul-americana. Frutas negras e especiarias.</div></div><div class="line-right"><div class="line-price">—</div><div class="line-sub">R$ 420 garrafa</div></div></div>
+          </div>
+          <div class="drinks-col-title" style="margin-top:2.5rem;">🥂 Espumantes e Brancos</div>
+          <div class="line-menu">
+            <div class="line-item"><div class="line-left"><div class="line-name">Chandon Brut Rosé</div><div class="line-desc">Nacional. Borbulhas finas, morango fresco e toque de brioche.</div></div><div class="line-right"><div class="line-price">R$ 32/taça</div><div class="line-sub">R$ 128 garrafa</div></div></div>
+            <div class="line-item"><div class="line-left"><div class="line-name">Vinho Verde Alvarinho</div><div class="line-desc">Portugal. Acidez refrescante, notas de limão e ervas frescas. Ideal para frutos do mar.</div></div><div class="line-right"><div class="line-price">R$ 36/taça</div><div class="line-sub">R$ 138 garrafa</div></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="drinks-col-title">🍹 Drinques e Coquetéis</div>
+          <div class="line-menu">
+            <div class="line-item"><div class="line-left"><div class="line-name">Caipirinha Dom Samuca</div><div class="line-desc">Cachaça Leblon envelhecida, limão tahiti, demerara e uma pitada de sal.</div></div><div class="line-right"><div class="line-price">R$ 32</div></div></div>
+            <div class="line-item"><div class="line-left"><div class="line-name">Negroni da Casa</div><div class="line-desc">Gin Monkey 47, Campari, Vermute Rosso. Servido no copo gelado com raspas de laranja.</div></div><div class="line-right"><div class="line-price">R$ 38</div></div></div>
+            <div class="line-item"><div class="line-left"><div class="line-name">Aperol Spritz</div><div class="line-desc">Aperol, Prosecco italiano e água com gás. Com laranja e azeitonas.</div></div><div class="line-right"><div class="line-price">R$ 34</div></div></div>
+            <div class="line-item"><div class="line-left"><div class="line-name">Passion Gold</div><div class="line-desc">Vodka premium, maracujá fresco, mel orgânico, limão siciliano e espumante brut. Assinatura da casa.</div></div><div class="line-right"><div class="line-price">R$ 42</div><div class="line-sub">Exclusivo</div></div></div>
+          </div>
+          <div class="drinks-col-title" style="margin-top:2.5rem;">🌿 Sem Álcool e Especiais</div>
+          <div class="line-menu">
+            <div class="line-item"><div class="line-left"><div class="line-name">Suco de Cupuaçu com Mel</div><div class="line-desc">Fruta amazônica fresca, mel orgânico e limão siciliano.</div></div><div class="line-right"><div class="line-price">R$ 18</div></div></div>
+            <div class="line-item"><div class="line-left"><div class="line-name">Água de Coco Verde na Casca</div><div class="line-desc">Coco verde do litoral fluminense, servido na casca com canudo de bambu.</div></div><div class="line-right"><div class="line-price">R$ 14</div></div></div>
+            <div class="line-item"><div class="line-left"><div class="line-name">Limonada Suíça</div><div class="line-desc">Limão tahiti com leite condensado e creme de leite fresco. O clássico que nunca sai de moda.</div></div><div class="line-right"><div class="line-price">R$ 16</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="menu-footer">
+    <div class="footer-logo">Dom <span>Samuca</span></div>
+    <div class="footer-ornament">◆ &nbsp; ◆ &nbsp; ◆</div>
+    <p class="footer-note">
+      Preços sujeitos a alteração. Todos os pratos podem ser adaptados para restrições alimentares.<br/>
+      Informe ao nosso maître sobre alergias ou preferências especiais.
+    </p>
+    <div class="footer-links-row">
+      <a href="index.html">Página Principal</a>
+      <a href="index.html#sobre">Nossa História</a>
+      <a href="index.html#reservas">Reservas</a>
+      <a href="index.html#ambiente">Ambiente</a>
+    </div>
+  </footer>
+
+  <script src="utils.js"></script>
+  <script src="cardapio.js"></script>
+</body>
+</html>
