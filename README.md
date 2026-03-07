@@ -14,7 +14,7 @@ dom-samuca/
 
 🚀 Como Usar
 Sem instalação necessária. Basta clonar o repositório e abrir o index.html no navegador:
-bashgit clone https://github.com/seu-usuario/dom-samuca.git
+bashgit clone https://github.com/TomSkyuU/Dom-Samuca-Restaurante.git
 cd dom-samuca
 Ou se preferir usar um servidor local:
 bash# Com Python
