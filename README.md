@@ -1,6 +1,13 @@
 Dom Samuca — Site Institucional
 Site institucional do Restaurante Dom Samuca, desenvolvido com HTML, CSS e JavaScript puros, sem frameworks ou dependências de build. Design luxuoso focado nas cores dourado e branco, com foco em experiência visual e responsividade.
 
+## 📸 Preview
+<img width="1892" height="955" alt="Captura de tela 2026-03-07 231431" src="https://github.com/user-attachments/assets/0033369e-7ab4-456a-ab16-29b4149cbf0e" />
+<img width="1920" height="951" alt="Captura de tela 2026-03-07 231452" src="https://github.com/user-attachments/assets/3a746512-8f9e-44f4-afe0-aef0744c69da" />
+<img width="1920" height="952" alt="Captura de tela 2026-03-07 231522" src="https://github.com/user-attachments/assets/08f34fab-c06f-4bf8-920d-b016dfb6cf41" />
+<img width="1920" height="951" alt="Captura de tela 2026-03-07 231552" src="https://github.com/user-attachments/assets/e7668718-e468-4d26-b275-6f2cfdcd0a17" />
+
+
 📁 Estrutura de Arquivos
 dom-samuca/
 ├── index.html        # Página principal
